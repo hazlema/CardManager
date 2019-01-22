@@ -1,0 +1,5 @@
+C:\Users\FrostyCrits\source\repos\Cards\CardManager\bin\Debug\CardManager.dll
+C:\Users\FrostyCrits\source\repos\Cards\CardManager\bin\Debug\CardManager.pdb
+C:\Users\FrostyCrits\source\repos\Cards\CardManager\obj\Debug\CardManager.csproj.CoreCompileInputs.cache
+C:\Users\FrostyCrits\source\repos\Cards\CardManager\obj\Debug\CardManager.dll
+C:\Users\FrostyCrits\source\repos\Cards\CardManager\obj\Debug\CardManager.pdb

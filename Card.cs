@@ -2,11 +2,16 @@
 //
 namespace CardManager {
     public class Card {
+        public int index { get; set; }
         public int value { get; set; }
         public enumSuit suit { get; set; }
 
         // Constructor
-        public Card(enumSuit suit, int value) {
+        public Card(int value, enumSuit suit, int? index=null) {
+            if (index != null) { 
+                this.index = (int)index;
+            }
+
             this.value = value;
             this.suit = suit;
         }

@@ -2,6 +2,7 @@
     public enum enumShuffled {
         Shuffle,
         SortByValue,
-        SortBySuit
+        SortBySuit,
+        SortByIndex
     }
 }

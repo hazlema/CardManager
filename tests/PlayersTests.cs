@@ -22,10 +22,10 @@ namespace CardManager.Tests {
             Players.FindByName("Player 1").isDealer = false;
             Console.WriteLine(Players.Dealer());
 
-            dealer.AddCard(new Card(enumSuit.Clubs, 4));
-            dealer.AddCard(new Card(enumSuit.Clubs, 3));
-            player1.AddCard(new Card(enumSuit.Clubs, 2));
-            player1.AddCard(new Card(enumSuit.Clubs, 1));
+            dealer.AddCard(new Card(4, enumSuit.Clubs));
+            dealer.AddCard(new Card(3, enumSuit.Clubs));
+            dealer.AddCard(new Card(2, enumSuit.Clubs));
+            dealer.AddCard(new Card(1, enumSuit.Clubs));
 
             List<Card> all = Players.AllPlayerCards();
             all.ForEach(s => Console.WriteLine(s.ToString()));

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace CardManager.Tests {
     public static class DeckTests {
@@ -59,6 +60,11 @@ namespace CardManager.Tests {
                 Card c = cm.deck.DealOne();
                 Console.WriteLine(c.ToString());
             }
+        }
+
+        public static void ShowIndexes() {
+            Deck newDeck = new Deck(enumShuffled.SortByIndex);
+            newDeck.All.ForEach(s => Console.WriteLine($"Index = {s.index}, {s.ToString()}") );
         }
     }
 }

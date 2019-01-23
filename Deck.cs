@@ -19,6 +19,7 @@ namespace CardManager {
             switch (Shuffle) {
                 case enumShuffled.Shuffle:      ShuffleDeck();      break;
                 case enumShuffled.SortBySuit:   SortDeckBySuit();   break;
+                case enumShuffled.SortByIndex:
                 case enumShuffled.SortByValue:  SortDeckByValue();  break;
             }
         }
@@ -26,11 +27,13 @@ namespace CardManager {
         // Create a deck
         private List<Card> GenerateDeck() {
             List<Card> newDeck = new List<Card>();
+            int index = 0;
             for (int v = 2; v <= 14; v++) {
                 for (int s = 0; s <= 3; s++) {
                     enumSuit suit = (enumSuit)s;
-                    Card c = new Card(suit, v);
+                    Card c = new Card(v, suit, index);
                     newDeck.Add(c);
+                    index += 1;
                 }
             }
             return newDeck;
